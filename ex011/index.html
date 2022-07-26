@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audio com HTML5</p>
+    
+    <!--Maneira 1 de reproduzir áudio. ambas maneiras aceitam os tipos MP3 WAV OGG-->
+    <audio src="midia/musica-braba.mp3" controls></audio>
+    <!--Maneira 2 de reproduzir áudio.-->
+    <audio preload="metadata" controls>
+        <!--Cada navegador aceita um tipo, com os três um abaixo do outro, ele vai tentando cada um em ordem até funcionar-->
+        <source src="midia/musica-braba.mp3" type="audio/mpeg">
+        <source src="midia/musica-braba.ogg" type="audio/ogg">
+        <source src="midia/musica-braba.wav" type="audio/wav">
+        <!--Caso nenhum funcione, mostra o texto abaixo-->
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio.</p>
+        <a href="midia/musica-braba.mp3">Clique aqui para baixar o arquivo MP3</a>
+    </audio>
+</body>
+</html>
