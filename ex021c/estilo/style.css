@@ -26,12 +26,17 @@ body{
 
 main{
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 800px;
     margin: auto;
+    background-color: white;
+    border-radius: 3px;
+    text-indent: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
+    font-family: var(--fonte-padrao);
 }
 
 main p{
-    padding: 0px 0px 10px 10px;
+    padding: 0px 10px 10px 10px;
     text-align: justify;
 }
 
@@ -44,6 +49,7 @@ header > p{
     text-align: center;
     color: white;
     padding: 0px 0px 40px 0px;
+    font-family: var(--fonte-jogo)
 }
 
 header > h1{
@@ -51,25 +57,16 @@ header > h1{
     text-align: center;
     color: white;
     padding: 40px;
+    font-family: var(--fonte-jogo);
 }
 
-article{
-    background-color: white;
-    width: 800px;
-    margin: auto;
-    border-radius: 3px;
-    text-indent: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
-    font-family: var(--fonte-padrao);
-}
-
-article > h1{
+main h1{
     font-size: 2.5em;
     padding: 10px 0px 20px 0px;
     font-family: var(--fonte-jogo);
 }
 
-article > h2{
+main h2{
     font-size: 1.6em;
     padding: 20px 0px 10px 0px;
     font-family: var(--fonte-jogo);
