@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        textarea{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <div>
+        <form action="cadastro.php" method="post">
+            <div>
+                <!--Exemplo form de Select-->
+                <label for="iest">Estado: </label>
+                <select name="est" id="iest">
+                    <option value="" selected>-- Selecione --</option>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <!--Exemplo de form Datalist-->
+                <label for="iprof">Profissão: </label> <input type="text" name="prof" id="iprof" list="listprof">
+                <datalist id="listprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="PRF">Professor</option>
+                    <option value="PRG">Programador</option>
+                    <option value="ENG">Engenheiro</option>
+                    <option value="ATL">Atleta</option>
+                    <option value="CTD">Contador</option>
+                    <option value="ANM">Animador</option>
+                </datalist>
+            </div>
+            <div>
+                <!--Exemplo de form Textarea-->
+                <label for="imsg">Mensagem: </label> <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua Mensagem!"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

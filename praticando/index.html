@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globi Noticias</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>globi.com</h1>
+    </header>
+    <nav>
+        <a href="#">Notícias</a>
+        <a href="#">Esportes</a>
+        <a href="#">Tecnologia</a>
+    </nav>
+    <main>
+        <article>
+            <h1>Apresentação</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eligendi a dolores, soluta accusantium facere ad sed consectetur. Neque similique necessitatibus ducimus harum saepe cum corrupti ex placeat dolore officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, non distinctio? Assumenda debitis facilis cupiditate dignissimos, expedita inventore praesentium. Quos et sint laborum pariatur! Est minus dolore itaque adipisci dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti unde fugiat porro impedit eligendi repellat veniam ea quo ratione, saepe nihil architecto quas aspernatur beatae? Ipsa fugiat ratione hic dolore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia beatae debitis sunt magnam, quis dolorem aperiam rerum adipisci at hic laudantium, quos nam laborum reprehenderit aliquam, eligendi ratione sit odit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eligendi a dolores, soluta accusantium facere ad sed consectetur. Neque similique necessitatibus ducimus harum saepe cum corrupti ex placeat dolore officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, non distinctio? Assumenda debitis facilis cupiditate dignissimos, expedita inventore praesentium. Quos et sint laborum pariatur! Est minus dolore itaque adipisci dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti unde fugiat porro impedit eligendi repellat veniam ea quo ratione, saepe nihil architecto quas aspernatur beatae? Ipsa fugiat ratione hic dolore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia beatae debitis sunt magnam, quis dolorem aperiam rerum adipisci at hic laudantium, quos nam laborum reprehenderit aliquam, eligendi ratione sit odit?</p>
+
+            <h2>Você concorda com isso? Deixe a sua opinião abaixo!</h2>
+            <div>
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <div>
+                        <label for="nome">Nome: </label> <input type="text" name="nome" id="nome" required maxlength="30" autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="idade">Idade: </label> <input type="number" name="idade" id="idade" autocomplete="off">
+                    </div>
+                    <div> 
+                        <label for="profissao">Profissão: </label> <input type="text" name="profissao" id="profissao" list="listprofissao">
+                        <datalist id="listprofissao">
+                            <option value="PRFS">Professor</option>
+                            <option value="ENG">Engenheiro</option>
+                            <option value="ESTD">Estudante</option>
+                            <option value="MDC">Médico</option>
+                            <option value="CRG">Cirurgião</option>
+                        </datalist>   
+                    </div>
+                    <div>
+                        <label for="estado">Estado: </label>
+                        <select name="estado" id="estado">
+                        <option value="">-- Selecione --</option>
+                        
+                        <optgroup label="Região Sudeste">
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+
+                        <optgroup label="Região Nordeste">
+                            <option value="MA">Maranhão</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                        </optgroup>
+                    </select>
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem: </label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua Mensagem!..."></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </form>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>Feito por Gustavo Mioto</p>
+    </footer>
+</body>
+</html>
